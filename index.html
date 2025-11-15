@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightPath Tutoring - Excellence in Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ==================== FILE: index.html ==================== -->
+    
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">🎓 BrightPath</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-btn" onclick="scrollToContact()">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Learning Journey</h1>
+                <p>Expert tutors, personalized lessons, and proven results. Join thousands of students achieving their academic goals.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToContact()">Start Free Trial</button>
+                    <button class="btn-secondary" onclick="scrollToFeatures()">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="500" height="400" fill="url(#grad1)"/>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgb(126,87,194);stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:rgb(99,102,241);stop-opacity:0.8" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="250" cy="200" r="120" fill="rgba(255,255,255,0.2)"/>
+                    <path d="M 200 150 L 250 100 L 300 150 L 280 150 L 280 250 L 220 250 L 220 150 Z" fill="white"/>
+                    <rect x="170" y="270" width="160" height="80" rx="10" fill="white" opacity="0.9"/>
+                    <rect x="190" y="290" width="50" height="40" rx="5" fill="#6366f1"/>
+                    <rect x="260" y="290" width="50" height="40" rx="5" fill="#ec4899"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features" id="features">
+        <h2 class="section-title fade-in">Why Choose BrightPath?</h2>
+        <p class="section-subtitle fade-in">We provide comprehensive tutoring solutions tailored to each student's unique needs</p>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">👨‍🏫</div>
+                <h3>Expert Tutors</h3>
+                <p>Learn from certified educators with years of teaching experience and proven track records.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📊</div>
+                <h3>Personalized Plans</h3>
+                <p>Custom learning paths designed around your goals, pace, and learning style.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">⏰</div>
+                <h3>Flexible Scheduling</h3>
+                <p>Book sessions at times that work for you, with 24/7 online access to resources.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📈</div>
+                <h3>Track Progress</h3>
+                <p>Real-time analytics and regular assessments to monitor improvement and celebrate success.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">💬</div>
+                <h3>Interactive Learning</h3>
+                <p>Engaging virtual classrooms with whiteboard, screen sharing, and collaborative tools.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎯</div>
+                <h3>Results Guaranteed</h3>
+                <p>95% of our students improve by at least one grade level within 3 months.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SUBJECTS SECTION ==================== -->
+    <section class="subjects" id="subjects">
+        <h2 class="section-title fade-in">Subjects We Cover</h2>
+        <p class="section-subtitle fade-in">From elementary to advanced levels, we've got you covered</p>
+        <div class="subjects-grid">
+            <div class="subject-card fade-in">
+                <div class="icon">📐</div>
+                <h4>Mathematics</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">🔬</div>
+                <h4>Science</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">📚</div>
+                <h4>English</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">🌍</div>
+                <h4>Geography</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">🏛️</div>
+                <h4>History</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">💻</div>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">🗣️</div>
+                <h4>Languages</h4>
+            </div>
+            <div class="subject-card fade-in">
+                <div class="icon">🎨</div>
+                <h4>Arts</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION TEST DATA ==================== -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title fade-in">What Our Students Say</h2>
+        <p class="section-subtitle fade-in">Real success stories from real students</p>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">BrightPath transformed my understanding of calculus. My tutor was patient and explained concepts in ways that finally clicked for me. Went from a C to an A!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SM</div>
+                    <div class="author-info">
+                        <h5>Sarah Martinez</h5>
+                        <p>High School Senior</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">The flexible scheduling was perfect for my busy family. My daughter's reading comprehension improved dramatically in just two months. Highly recommend!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">JT</div>
+                    <div class="author-info">
+                        <h5>James Thompson</h5>
+                        <p>Parent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">Best investment in my education. The SAT prep course helped me score 200 points higher than my initial practice test. Got into my dream college!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">EP</div>
+                    <div class="author-info">
+                        <h5>Emily Patel</h5>
+                        <p>College Freshman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2 class="fade-in">Ready to Excel?</h2>
+            <p class="fade-in">Start your free trial today. No credit card required.</p>
+            <form class="cta-form fade-in" onsubmit="handleSubmit(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About BrightPath</h3>
+                <p>We're dedicated to helping students reach their full potential through personalized, high-quality tutoring services.</p>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                    <a href="#">📷</a>
+                    <a href="#">💼</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#features">Our Services</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#testimonials">Success Stories</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="#">Study Guides</a>
+                <a href="#">Practice Tests</a>
+                <a href="#">Tutor Application</a>
+                <a href="#">FAQ</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📧 info@brightpath.com</p>
+                <p>📞 (+256) </p>
+                <p>📍 (Location)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BrightPath Tutoring. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
